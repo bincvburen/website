@@ -1462,6 +1462,9 @@ footer div p:last-of-type {
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
+.niet-gevonden a {
+	margin-right: 1em;
+}
 
 
 

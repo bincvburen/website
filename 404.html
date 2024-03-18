@@ -3,37 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Pagina niet gevonden</title>
-    <link rel="stylesheet" href="/styles/style.css"> <!-- Als je een apart CSS-bestand hebt -->
-    <!-- Of je kunt de stijlen hier inline toevoegen -->
-    <style>
-        /* CSS-stijlen voor de 404-pagina */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Pagina niet gevonden</title>
+    <link rel="stylesheet" href="/styles/style.css"> 
+
 </head>
 <body>
-    <h1>Oeps! Pagina niet gevonden</h1>
-    <p>De pagina die je zoekt, bestaat niet.</p>
-    <p><a href="/">Terug naar de homepagina</a></p>
+
+    <script defer src="/scripts/script.js"></script>
+
+	<header>
+		<nav>
+			<img src="/images/iconen/logo_small.svg" alt="Apple logo">
+			<div> <a href="/index.html">
+					<h1>Binc van Buren</h1>
+				</a></div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="wrapper_home">
+
+
+			<video src="/videos/gradient_blauw.mp4" playsinline loop muted autoplay></video>
+			<video src="/videos/gradient_roze.mp4" playsinline loop muted autoplay></video>
+
+			<div>
+				<div class="niet-gevonden">
+					<h2>Oeps, pagina niet gevonden</h2>
+					<p>Ga direct naar een van de volgende pagina's</p>
+					<div>
+					<a class="secundair" href="/dj/index.html"><button class="bt">DJ</button></a>
+					<a class="secundair" href="/portfolio/index.html"><button class="bt">Design</button></a>
+				</div>
+				</div>
+
+
+			</div>
+
+
+		</section>
+
+
 </body>
 </html>

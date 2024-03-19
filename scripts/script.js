@@ -1,7 +1,9 @@
 // JavaScript Document
 console.log("hiii");
 
-
+if (window.history.replaceState) {
+  window.history.replaceState(null, null, window.location.pathname.replace('.html', ''));
+}
 
 var today = new Date();
 var time = today.getHours();

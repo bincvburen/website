@@ -2,8 +2,16 @@
 console.log("hiii");
 
 if (window.history.replaceState) {
-  window.history.replaceState(null, null, window.location.pathname.replace('.html', ''));
+  var currentPath = window.location.pathname;
+  var currentHash = window.location.hash;
+  if (currentPath.endsWith('/')) {
+      currentPath = currentPath.slice(0, -1); // Verwijder de laatste slash
+  }
+  var newUrl = currentPath.replace('.html', '') + currentHash;
+  window.history.replaceState(null, null, newUrl);
 }
+
+
 
 var today = new Date();
 var time = today.getHours();

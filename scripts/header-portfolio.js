@@ -37,22 +37,3 @@ window.onload = function() {
     xhr.send();
 };
 
-// Functie om te bepalen waar het logo naar moet linken op basis van de huidige URL
-function bepaalLogoLink() {
-    // Haal het pad van de huidige URL op
-    var huidigPad = window.location.pathname;
-
-    // Als de huidige pagina de indexpagina is, link dan naar een ander pad
-    if (huidigPad === "/" || huidigPad === "/index.html") {
-        return "/ander-pad"; // Vervang "/ander-pad" door het gewenste pad voor de indexpagina
-    } else {
-        return "/"; // Link naar het hoofdpad voor andere pagina's
-    }
-}
-
-// Voeg een klikgebeurtenis toe aan het logo
-document.getElementById('logo').addEventListener('click', function() {
-    var logoLink = bepaalLogoLink();
-    window.location.href = logoLink;
-});
-
